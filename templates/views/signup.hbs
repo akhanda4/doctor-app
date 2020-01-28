@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+
+<body>
+    <div class="error">{{error}}</div>
+    <h1>DOCTORS APP</h1>
+    <div class="main-content">
+        <form action="signup" id="form" method="POST">
+            <input type="text" name="name" id="name" placeholder="Alex gordan" required>
+            <input type="number" name="age" id="age" min="0" max="90" placeholder="age" required>
+            <select title="Experience" name="experience">
+                <option value="< 1 year"> &lt 1 year</option>
+                <option value="2 - 3 years"> 2 - 3 years </option>
+                <option value="> 5 years">&gt 5 years</option>
+            </select>
+            <input type="text" name="email" placeholder="example@gmail.com" required>
+            <input type="password" name="password" id="password" placeholder="*********" required>
+            <select name="user" id="user">
+                <option value="doctor">Doctor</option>
+            </select>
+            <select title="Education" name="education">
+                <option value="basic"> Basic </option>
+                <option value="mbbs"> MBBS </option>
+            </select>
+            <button type="submit" id="submit_form">Signup</button>
+        </form>
+        <p>Already registered? <a href="login">Login</a></p>
+    </div>
+
+    <script src="../js/signup.js"></script>
+</body>
+
+</html>

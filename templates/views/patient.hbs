@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/patient.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>DOCTOR'S LIST</h1>
+    </div>
+    <table>
+        <tr>
+            <th> Name </th>
+            <th> Age </th>
+            <th> Experience </th>
+            <th> Email </th>
+            <th> Education </th>
+            <th> Appointment </th>
+        </tr>
+        {{#each doctors}}
+        <tr>
+            <td> {{name}} </td>
+            <td> {{age}} </td>
+            <td> {{experience}} </td>
+            <td> {{email}} </td>
+            <td> {{education}} </td>
+            <td><button class="appointment">Book</button></td>
+        </tr>
+        {{/each}}
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <h1>DOCTORS APP</h1>
+    <form action="patient" target="_blank" method="GET">
+        <button type="submit" id="patient">Patient</button>
+    </form>
+    <div class="error">{{error}}</div>
+    <div class="main-content">
+        <form id="form" action="login" method="POST">
+            <input type="email" name="email" placeholder="example@gmail.com" required id="email" value={{email}}>
+            <input type="password" name="password" placeholder="**********" required id="pwd">
+            <select name="user" id="user">
+                <option value="doctor">Doctor</option>
+            </select>
+            <button type="submit" id="submit_login_form">Login</button>
+        </form>
+        <p>Not registered? <a href="signup">Create Account</a></p>
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

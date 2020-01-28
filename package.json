@@ -1,0 +1,22 @@
+{
+  "name": "doctor-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "dev": "nodemon src/index.js -e js,hbs,css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "hbs": "^4.1.0",
+    "mongoose": "^5.8.9",
+    "nodemon": "^2.0.2",
+    "validator": "^12.2.0"
+  }
+}

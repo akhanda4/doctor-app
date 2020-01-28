@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/editProfile.css">
+</head>
+
+<body>
+    <div class="error">{{error}}</div>
+    <div class="main-content">
+        <form action="updateprofile" method="POST">
+            <input type="text" name="name" id="name" placeholder="Full name" required value="{{name}}">
+            <input type=" number" name="age" id="age" placeholder="age" required value="{{age}}">
+            <input type="email" name="email" id="email" placeholder="Email" readonly required value="{{email}}">
+            <select name="status" id="status" title="Status">
+                <option value="enable" {{selected1}}>Enable</option>
+                <option value="disable" {{selected2}}>Disable</option>
+            </select>
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</body>
+
+</html>
